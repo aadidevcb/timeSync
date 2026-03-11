@@ -26,13 +26,14 @@ Rules:
 - Infer time slots from column headers
 - If a cell spans multiple columns, set start_time from first column and end_time from last
 - Ignore blank cells and lunch break rows
+- Include Free Elective periods as events with subject "Free Elective" and type "Elective"
 - Use 24hr time format HH:MM
-- type must be one of: Lecture, Lab, Tutorial, Break
+- type must be one of: Lecture, Lab, Tutorial, Break, Elective
 - If location is not visible, use empty string
 - day must be full name: Monday, Tuesday, Wednesday, Thursday, Friday"""
 
 VALID_DAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}
-VALID_TYPES = {"Lecture", "Lab", "Tutorial", "Break"}
+VALID_TYPES = {"Lecture", "Lab", "Tutorial", "Break", "Elective"}
 TIME_PATTERN = re.compile(r"^\d{2}:\d{2}$")
 
 
