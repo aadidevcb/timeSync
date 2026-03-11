@@ -1,126 +1,76 @@
-# TimeSync — Timetable to Google Calendar
+# ⏱ TimeSync
 
-Upload a photo of your college timetable → parse it with Gemini AI → review and edit → export to Google Calendar as recurring weekly events.
+### Turn your college timetable photo into a Google Calendar — in 30 seconds.
 
----
-
-## Project Structure
-
-```
-timeSync-willwork/
-├── backend/
-│   ├── main.py          # FastAPI app (6 endpoints)
-│   ├── parser.py        # Gemini Vision + Pydantic validation
-│   ├── exporter.py      # ICS calendar generation
-│   ├── auth.py          # Google OAuth helpers
-│   ├── requirements.txt
-│   └── .env.example
-└── frontend/
-    ├── src/
-    │   ├── components/
-    │   │   ├── ImageUpload.jsx      # Drag-and-drop upload
-    │   │   ├── TimetableEditor.jsx  # Editable table
-    │   │   ├── DateRangePicker.jsx  # Semester range + recurrence
-    │   │   ├── ExportPanel.jsx      # ICS / CSV / GCal export
-    │   │   └── AuthButton.jsx       # Google Sign-in
-    │   ├── App.jsx
-    │   └── main.jsx
-    ├── vite.config.js
-    └── .env.example
-```
+No manual entry. No spreadsheets. Just snap, review, export.
 
 ---
 
-## Setup
+## How it works
 
-### 1. Backend
+**1. Upload a photo** of your printed or digital timetable — any angle, any format.
 
+**2. AI reads it** — Gemini Vision extracts every subject, day, time slot, and room automatically.
+
+**3. Review & fix** — an interactive weekly grid lets you drag events to adjust times, move them across days, or edit details with a click.
+
+**4. Export** — download an `.ics` file for any calendar app, grab a CSV, or sync directly to Google Calendar as recurring weekly events for the whole semester.
+
+---
+
+## Features
+
+- 🧠 **Gemini-powered parsing** — handles handwritten, printed, and digital timetables
+- 📅 **Smart recurrence** — generates weekly events from semester start to end automatically
+- ✏️ **Visual grid editor** — drag-to-move, drag-to-resize, click-to-edit, per-subject colors
+- ⚠️ **Flagged rows** — suspicious or incomplete entries are highlighted so nothing slips through
+- 📥 **Three export formats** — `.ics` (Apple / Outlook / Google), CSV, or direct Google Calendar sync
+- 🔒 **Privacy-first** — fully stateless, no database, OAuth token never touches disk
+
+---
+
+## Self-host in 2 minutes
+
+### Backend
 ```bash
 cd backend
-
-# Copy and fill in your keys
-cp .env.example .env
-# Required: GEMINI_API_KEY
-# Optional (for GCal sync): GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Start the server
+cp .env.example .env        # add your GEMINI_API_KEY
 uvicorn main:app --reload --port 8000
 ```
 
-Visit [http://localhost:8000/docs](http://localhost:8000/docs) to browse the Swagger UI.
-
-### 2. Frontend
-
+### Frontend
 ```bash
 cd frontend
-
-# Copy env file
-cp .env.example .env
-# VITE_API_URL defaults to http://localhost:8000
-
-# Install and run
 npm install
-npm run dev
+npm run dev                 # → http://localhost:5173
 ```
 
-Visit [http://localhost:5173](http://localhost:5173)
+> **Get a Gemini API key free at** [aistudio.google.com](https://aistudio.google.com)
 
 ---
 
-## Environment Variables
+## Optional: Google Calendar sync
 
-### backend/.env
-| Variable | Required | Description |
-|---|---|---|
-| `GEMINI_API_KEY` | ✅ | Google AI Studio key |
-| `GOOGLE_CLIENT_ID` | Optional | For GCal sync |
-| `GOOGLE_CLIENT_SECRET` | Optional | For GCal sync |
-| `FRONTEND_URL` | Optional | Default: `http://localhost:5173` |
+To enable the **Sync to Google Calendar** button, create an OAuth 2.0 client in [Google Cloud Console](https://console.cloud.google.com) and add these values to `backend/.env`:
 
-### frontend/.env
-| Variable | Description |
+```
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+```
+
+Add `http://localhost:8000/api/auth/callback` as an authorised redirect URI.
+
+The `.ics` download works without any Google account.
+
+---
+
+## Stack
+
+| Layer | Technology |
 |---|---|
-| `VITE_API_URL` | Backend URL (default: `http://localhost:8000`) |
-
----
-
-## API Endpoints
-
-| Method | Path | Description |
-|---|---|---|
-| `POST` | `/api/parse-image` | Upload timetable image → Gemini Vision → JSON |
-| `POST` | `/api/export/ics` | Events → `.ics` file download |
-| `POST` | `/api/export/csv` | Events → `.csv` file download |
-| `GET`  | `/api/auth/google` | Initiate Google OAuth flow |
-| `GET`  | `/api/auth/callback` | OAuth callback → redirect to frontend |
-| `POST` | `/api/sync/gcal` | Sync events to Google Calendar |
-
----
-
-## User Flow
-
-1. **Upload** — Drag and drop a timetable photo
-2. **Review** — Edit the parsed table, fix flagged rows (amber highlight)
-3. **Export** — Choose: download `.ics`, download CSV, or sync directly to Google Calendar
-
----
-
-## Tech Stack
-
-- **Frontend**: React 18 + Vite + TailwindCSS
-- **Backend**: FastAPI + Python
-- **AI Parsing**: Gemini 2.0 Flash Vision
-- **Calendar**: Google Calendar API v3 + iCalendar
-- **Auth**: Google OAuth 2.0
-
----
-
-## Notes
-
-- **No database** — fully stateless
-- **Tokens never stored** in localStorage — React state only
-- Flagged events (suspicious parse output) are highlighted amber in the editor
-- ICS files include weekly RRULE with 10-minute popup reminder
+| Frontend | React 18 + Vite + TailwindCSS |
+| Backend | FastAPI (Python) |
+| AI | Gemini 2.5 Flash Vision |
+| Calendar | Google Calendar API v3 + iCalendar |
+| Auth | Google OAuth 2.0 |
