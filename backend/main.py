@@ -1,6 +1,8 @@
 import os
 import io
 import csv
+import sys
+import secrets
 from datetime import datetime
 from typing import List, Optional
 
@@ -10,6 +12,9 @@ from fastapi.responses import StreamingResponse, RedirectResponse, JSONResponse
 from pydantic import BaseModel
 import requests
 from dotenv import load_dotenv
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 from parser import parse_timetable_image
 from exporter import generate_ics
@@ -17,14 +22,37 @@ from auth import get_auth_url, exchange_code_for_token
 
 load_dotenv()
 
-app = FastAPI(title="TimeSync API", version="1.0.0")
-
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
+
+# --- Startup validation ---------------------------------------------------
+_missing = []
+if not os.getenv("FRONTEND_URL"):
+    _missing.append("FRONTEND_URL")
+if not os.getenv("BACKEND_URL"):
+    _missing.append("BACKEND_URL")
+if _missing and ENVIRONMENT == "production":
+    print(f"FATAL: Missing required env vars: {', '.join(_missing)}", file=sys.stderr)
+    sys.exit(1)
+
+# --- App setup -------------------------------------------------------------
+docs_url = "/docs" if ENVIRONMENT != "production" else None
+redoc_url = "/redoc" if ENVIRONMENT != "production" else None
+
+app = FastAPI(title="TimeSync API", version="1.0.0", docs_url=docs_url, redoc_url=redoc_url)
+
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+
+
+@app.exception_handler(RateLimitExceeded)
+async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return JSONResponse(status_code=429, content={"detail": "Too many requests. Try again later."})
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL, "http://localhost:5173"],
+    allow_origins=[FRONTEND_URL],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -60,7 +88,8 @@ class SyncRequest(BaseModel):
 # ---------------------------------------------------------------------------
 
 @app.post("/api/parse-image")
-async def parse_image(file: UploadFile = File(...)):
+@limiter.limit("5/minute")
+async def parse_image(request: Request, file: UploadFile = File(...)):
     allowed_types = {"image/png", "image/jpeg", "image/webp"}
     if file.content_type not in allowed_types:
         raise HTTPException(
@@ -133,15 +162,24 @@ async def export_csv(body: dict):
 @app.get("/api/auth/google")
 async def auth_google(request: Request):
     redirect_uri = f"{BACKEND_URL}/api/auth/callback"
-    url = get_auth_url(redirect_uri)
-    return RedirectResponse(url)
+    state = secrets.token_urlsafe(32)
+    url = get_auth_url(redirect_uri, state=state)
+    response = RedirectResponse(url)
+    response.set_cookie(
+        "oauth_state", state, httponly=True, samesite="lax", max_age=600, secure=ENVIRONMENT == "production",
+    )
+    return response
 
 # ---------------------------------------------------------------------------
 # GET /api/auth/callback
 # ---------------------------------------------------------------------------
 
 @app.get("/api/auth/callback")
-async def auth_callback(code: str, request: Request):
+async def auth_callback(code: str, state: str, request: Request):
+    expected_state = request.cookies.get("oauth_state")
+    if not expected_state or state != expected_state:
+        raise HTTPException(status_code=403, detail="Invalid OAuth state")
+
     redirect_uri = f"{BACKEND_URL}/api/auth/callback"
     try:
         token_data = exchange_code_for_token(code, redirect_uri)
@@ -151,7 +189,9 @@ async def auth_callback(code: str, request: Request):
 
     # Redirect to frontend with token in URL fragment
     frontend_redirect = f"{FRONTEND_URL}/#access_token={access_token}"
-    return RedirectResponse(frontend_redirect)
+    response = RedirectResponse(frontend_redirect)
+    response.delete_cookie("oauth_state")
+    return response
 
 # ---------------------------------------------------------------------------
 # POST /api/sync/gcal

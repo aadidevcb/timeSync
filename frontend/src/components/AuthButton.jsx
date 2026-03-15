@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { LogIn, LogOut, Loader2 } from 'lucide-react'
+import BASE_URL from '../api.js'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = BASE_URL
 
 export default function AuthButton({ accessToken, userEmail, onAuth, onLogout }) {
   const [loading, setLoading] = useState(false)

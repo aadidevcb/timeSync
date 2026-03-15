@@ -14,7 +14,7 @@ SCOPES = [
 ]
 
 
-def get_auth_url(redirect_uri: str) -> str:
+def get_auth_url(redirect_uri: str, state: str = "") -> str:
     """Build Google OAuth 2.0 authorization URL."""
     params = {
         "client_id": os.getenv("GOOGLE_CLIENT_ID"),
@@ -23,6 +23,7 @@ def get_auth_url(redirect_uri: str) -> str:
         "scope": " ".join(SCOPES),
         "access_type": "online",
         "prompt": "consent",
+        "state": state,
     }
     return f"{GOOGLE_AUTH_URL}?{urlencode(params)}"
 
