@@ -3,6 +3,7 @@ services:
     name: timesync-backend
     runtime: docker
     dockerContext: ./backend
+    dockerfilePath: ./backend/Dockerfile
     autoDeploy: true
     envVars:
       - key: GEMINI_API_KEY
