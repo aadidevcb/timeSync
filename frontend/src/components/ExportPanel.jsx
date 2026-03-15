@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { Download, FileSpreadsheet, CalendarCheck, Loader2, CheckCircle2, AlertCircle, ExternalLink } from 'lucide-react'
 import AuthButton from './AuthButton'
+import BASE_URL from '../api.js'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = BASE_URL
 
 function ExportCard({ icon: Icon, title, description, action, disabled }) {
   return (

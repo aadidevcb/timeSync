@@ -1,7 +1,8 @@
 import { useState, useCallback } from 'react'
 import { UploadCloud, Image as ImageIcon, Loader2, AlertCircle } from 'lucide-react'
+import BASE_URL from '../api.js'
 
-const API_URL = ''
+const API_URL = BASE_URL
 
 const ACCEPTED_TYPES = ['image/png', 'image/jpeg', 'image/webp']
 
