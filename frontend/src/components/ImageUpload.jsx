@@ -12,6 +12,7 @@ export default function ImageUpload({ onParsed }) {
   const [preview, setPreview] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const [isWakingUp, setIsWakingUp] = useState(false)
 
   const handleFile = useCallback((f) => {
     if (!f) return
@@ -38,6 +39,8 @@ export default function ImageUpload({ onParsed }) {
     if (!file) return
     setLoading(true)
     setError(null)
+    setIsWakingUp(false)
+    const wakeTimer = setTimeout(() => setIsWakingUp(true), 5000)
     try {
       const formData = new FormData()
       formData.append('file', file)
@@ -55,6 +58,8 @@ export default function ImageUpload({ onParsed }) {
     } catch (e) {
       setError(e.message)
     } finally {
+      clearTimeout(wakeTimer)
+      setIsWakingUp(false)
       setLoading(false)
     }
   }
@@ -158,6 +163,13 @@ export default function ImageUpload({ onParsed }) {
           )}
         </button>
       </div>
+
+      {/* Wakeup message */}
+      {isWakingUp && (
+        <p className="mt-3 text-center text-white/40 text-sm">
+          Waking up the server — this takes ~30 seconds on first load. Hang tight.
+        </p>
+      )}
 
       {/* Tips */}
       <div className="mt-8 grid grid-cols-3 gap-3 text-center">
