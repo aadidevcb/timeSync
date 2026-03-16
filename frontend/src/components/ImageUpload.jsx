@@ -44,6 +44,7 @@ export default function ImageUpload({ onParsed }) {
       const res = await fetch(`${API_URL}/api/parse-image`, {
         method: 'POST',
         body: formData,
+        signal: AbortSignal.timeout(60000),
       })
       if (!res.ok) {
         const err = await res.json().catch(() => ({}))

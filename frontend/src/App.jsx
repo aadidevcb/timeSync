@@ -4,6 +4,7 @@ import TimetableEditor from './components/TimetableEditor'
 import DateRangePicker from './components/DateRangePicker'
 import ExportPanel from './components/ExportPanel'
 import { Loader2, Sparkles, CalendarCheck, ArrowLeft, ExternalLink } from 'lucide-react'
+import { startKeepAlive } from './utils/keepAlive.js'
 
 // ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -84,6 +85,9 @@ function DoneView({ onReset, calendarUrl }) {
 export default function App() {
   // State machine: 'upload' | 'loading' | 'editor' | 'done'
   const [view, setView] = useState('upload')
+
+  // Keep Render free tier alive — ping /health every 14 minutes
+  useEffect(() => { startKeepAlive() }, [])
   const [events, setEvents] = useState([])
   const [semesterStart, setSemesterStart] = useState(getToday())
   const [semesterEnd, setSemesterEnd] = useState(getEndOfSemester())
