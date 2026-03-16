@@ -264,6 +264,10 @@ async def sync_gcal(body: SyncRequest, request: Request):
 # Health check
 # ---------------------------------------------------------------------------
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
 @app.get("/")
 async def root():
     return {"message": "TimeSync API is running. Visit /docs for the API docs."}
