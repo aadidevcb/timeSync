@@ -48,7 +48,7 @@ export default function ExportPanel({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ events, semester_start: semesterStart, semester_end: semesterEnd, recurrence_type: recurrenceType }),
-        signal: AbortSignal.timeout(60000),
+        signal: AbortSignal.timeout(120000),
       })
       if (!res.ok) throw new Error((await res.json()).detail || `Error ${res.status}`)
       const blob = await res.blob()
@@ -96,7 +96,7 @@ export default function ExportPanel({
           Authorization: `Bearer ${accessToken}`,
         },
         body: JSON.stringify({ events, semester_start: semesterStart, semester_end: semesterEnd, recurrence_type: recurrenceType }),
-        signal: AbortSignal.timeout(60000),
+        signal: AbortSignal.timeout(120000),
       })
       if (!res.ok) throw new Error((await res.json()).detail || `Error ${res.status}`)
       const data = await res.json()
