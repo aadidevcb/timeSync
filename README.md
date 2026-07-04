@@ -1,76 +1,36 @@
-# ⏱ TimeSync
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Turn your college timetable photo into a Google Calendar — in 30 seconds.
+## Getting Started
 
-No manual entry. No spreadsheets. Just snap, review, export.
+First, run the development server:
 
----
-
-## How it works
-
-**1. Upload a photo** of your printed or digital timetable — any angle, any format.
-
-**2. AI reads it** — Gemini Vision extracts every subject, day, time slot, and room automatically.
-
-**3. Review & fix** — an interactive weekly grid lets you drag events to adjust times, move them across days, or edit details with a click.
-
-**4. Export** — download an `.ics` file for any calendar app, grab a CSV, or sync directly to Google Calendar as recurring weekly events for the whole semester.
-
----
-
-## Features
-
-- 🧠 **Gemini-powered parsing** — handles handwritten, printed, and digital timetables
-- 📅 **Smart recurrence** — generates weekly events from semester start to end automatically
-- ✏️ **Visual grid editor** — drag-to-move, drag-to-resize, click-to-edit, per-subject colors
-- ⚠️ **Flagged rows** — suspicious or incomplete entries are highlighted so nothing slips through
-- 📥 **Three export formats** — `.ics` (Apple / Outlook / Google), CSV, or direct Google Calendar sync
-- 🔒 **Privacy-first** — fully stateless, no database, OAuth token never touches disk
-
----
-
-## Self-host in 2 minutes
-
-### Backend
 ```bash
-cd backend
-pip install -r requirements.txt
-cp .env.example .env        # add your GEMINI_API_KEY
-uvicorn main:app --reload --port 8000
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev                 # → http://localhost:5173
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-> **Get a Gemini API key free at** [aistudio.google.com](https://aistudio.google.com)
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Optional: Google Calendar sync
+## Learn More
 
-To enable the **Sync to Google Calendar** button, create an OAuth 2.0 client in [Google Cloud Console](https://console.cloud.google.com) and add these values to `backend/.env`:
+To learn more about Next.js, take a look at the following resources:
 
-```
-GOOGLE_CLIENT_ID=...
-GOOGLE_CLIENT_SECRET=...
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Add `http://localhost:8000/api/auth/callback` as an authorised redirect URI.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-The `.ics` download works without any Google account.
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | React 18 + Vite + TailwindCSS |
-| Backend | FastAPI (Python) |
-| AI | Gemini 2.5 Flash Vision |
-| Calendar | Google Calendar API v3 + iCalendar |
-| Auth | Google OAuth 2.0 |
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
