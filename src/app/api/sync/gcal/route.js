@@ -28,16 +28,30 @@ const WEEKDAYS = {
 
 const CALENDAR_ID = 'primary';
 const TIMESYNC_TAG = 'timesync'; // private extended property marker
+const CALENDAR_TIME_ZONE = 'Asia/Kolkata';
 
 function firstOccurrence(dayName, semesterStart) {
-    const start = new Date(semesterStart);
+    // Date-only strings are interpreted as UTC by JavaScript. Keep all of this
+    // calculation in UTC so the selected weekday is independent of the server's
+    // own time zone.
+    const start = new Date(`${semesterStart}T00:00:00Z`);
     const target = WEEKDAYS[dayName];
-    const jsToWeekday = (start.getDay() + 6) % 7;
+    const jsToWeekday = (start.getUTCDay() + 6) % 7;
     let daysAhead = (target - jsToWeekday) % 7;
     if (daysAhead < 0) daysAhead += 7;
     const result = new Date(start);
-    result.setDate(result.getDate() + daysAhead);
+    result.setUTCDate(result.getUTCDate() + daysAhead);
     return result;
+}
+
+function eventDateTime(date, time) {
+    const year = date.getUTCFullYear();
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+    const day = String(date.getUTCDate()).padStart(2, '0');
+
+    // Do not convert this wall-clock time with toISOString(). Google Calendar
+    // interprets this value in CALENDAR_TIME_ZONE, as specified below.
+    return `${year}-${month}-${day}T${time}:00`;
 }
 
 function getAuthToken(request) {
@@ -73,8 +87,8 @@ export async function POST(request) {
 
         const { events, semester_start, semester_end, recurrence_type } = parseResult.data;
 
-        const endDate = new Date(semester_end);
-        const untilStr = endDate.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+        // Include classes on the final semester day. RRULE UNTIL uses UTC.
+        const untilStr = `${semester_end.replace(/-/g, '')}T235959Z`;
 
         let created_count = 0;
         for (const ev of events) {
@@ -82,20 +96,11 @@ export async function POST(request) {
             if (!(dayName in WEEKDAYS)) continue;
 
             const first = firstOccurrence(dayName, semester_start);
-            const [sh, sm] = ev.start_time.split(":").map(Number);
-            const [eh, em] = ev.end_time.split(":").map(Number);
-
-            const dtstart = new Date(first);
-            dtstart.setHours(sh, sm, 0, 0);
-
-            const dtend = new Date(first);
-            dtend.setHours(eh, em, 0, 0);
-
             const eventBody = {
                 summary: `${ev.subject} (${ev.type || 'Lecture'})`,
                 location: ev.location || "",
-                start: { dateTime: dtstart.toISOString(), timeZone: "Asia/Kolkata" },
-                end: { dateTime: dtend.toISOString(), timeZone: "Asia/Kolkata" },
+                start: { dateTime: eventDateTime(first, ev.start_time), timeZone: CALENDAR_TIME_ZONE },
+                end: { dateTime: eventDateTime(first, ev.end_time), timeZone: CALENDAR_TIME_ZONE },
                 recurrence: recurrence_type === "weekly" ? [`RRULE:FREQ=WEEKLY;UNTIL=${untilStr}`] : [],
                 reminders: {
                     useDefault: false,
