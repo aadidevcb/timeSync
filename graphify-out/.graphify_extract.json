@@ -1,0 +1,2337 @@
+{
+  "nodes": [
+    {
+      "id": "postcss_config_mjs",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_mjs",
+      "label": "next.config.mjs",
+      "file_type": "code",
+      "source_file": "next.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "eslint_config_mjs",
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_layout_js",
+      "label": "layout.js",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_app_page_js",
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_page_gettoday",
+      "label": "getToday()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "app_page_getendofsemester",
+      "label": "getEndOfSemester()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L12"
+    },
+    {
+      "id": "app_page_deletemodal",
+      "label": "DeleteModal()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L18"
+    },
+    {
+      "id": "app_page_loadingview",
+      "label": "LoadingView()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L51"
+    },
+    {
+      "id": "app_page_doneview",
+      "label": "DoneView()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L73"
+    },
+    {
+      "id": "app_page_stephero",
+      "label": "StepHero()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L113"
+    },
+    {
+      "id": "app_page_benefitgrid",
+      "label": "BenefitGrid()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L138"
+    },
+    {
+      "id": "app_page_app",
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L153"
+    },
+    {
+      "id": "src_app_api_auth_google_route_js",
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/google/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "google_route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/google/route.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "src_app_api_auth_callback_route_js",
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/callback/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "callback_route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/auth/callback/route.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_app_api_parse_image_route_js",
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "parse_image_route_isratelimited",
+      "label": "isRateLimited()",
+      "file_type": "code",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "parse_image_route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_app_api_sync_gcal_route_js",
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "gcal_route_firstoccurrence",
+      "label": "firstOccurrence()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L33"
+    },
+    {
+      "id": "gcal_route_eventdatetime",
+      "label": "eventDateTime()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L47"
+    },
+    {
+      "id": "gcal_route_getauthtoken",
+      "label": "getAuthToken()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L57"
+    },
+    {
+      "id": "gcal_route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L64"
+    },
+    {
+      "id": "gcal_route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L136"
+    },
+    {
+      "id": "gcal_route_delete",
+      "label": "DELETE()",
+      "file_type": "code",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L169"
+    },
+    {
+      "id": "src_app_api_export_ics_route_js",
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "ics_route_firstoccurrence",
+      "label": "firstOccurrence()",
+      "file_type": "code",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L30"
+    },
+    {
+      "id": "ics_route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L46"
+    },
+    {
+      "id": "src_components_timetableeditor_jsx",
+      "label": "TimetableEditor.jsx",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_timetableeditor_timetomin",
+      "label": "timeToMin()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L27"
+    },
+    {
+      "id": "components_timetableeditor_mintotime",
+      "label": "minToTime()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L33"
+    },
+    {
+      "id": "components_timetableeditor_mintopct",
+      "label": "minToPct()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "components_timetableeditor_snap",
+      "label": "snap()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L43"
+    },
+    {
+      "id": "components_timetableeditor_clamp",
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "components_timetableeditor_subjectcolor",
+      "label": "subjectColor()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "components_timetableeditor_timetableeditor",
+      "label": "TimetableEditor()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "components_timetableeditor_eventblock",
+      "label": "EventBlock()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L366"
+    },
+    {
+      "id": "components_timetableeditor_crossrowpreview",
+      "label": "CrossRowPreview()",
+      "file_type": "code",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L538"
+    },
+    {
+      "id": "src_components_imageupload_jsx",
+      "label": "ImageUpload.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ImageUpload.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_imageupload_imageupload",
+      "label": "ImageUpload()",
+      "file_type": "code",
+      "source_file": "src/components/ImageUpload.jsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_components_exportpanel_jsx",
+      "label": "ExportPanel.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_exportpanel_optcard",
+      "label": "OptCard()",
+      "file_type": "code",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "components_exportpanel_exportpanel",
+      "label": "ExportPanel()",
+      "file_type": "code",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L35"
+    },
+    {
+      "id": "src_components_authbutton_jsx",
+      "label": "AuthButton.jsx",
+      "file_type": "code",
+      "source_file": "src/components/AuthButton.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_authbutton_authbutton",
+      "label": "AuthButton()",
+      "file_type": "code",
+      "source_file": "src/components/AuthButton.jsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_components_daterangepicker_jsx",
+      "label": "DateRangePicker.jsx",
+      "file_type": "code",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_daterangepicker_firstoccurrence",
+      "label": "firstOccurrence()",
+      "file_type": "code",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "components_daterangepicker_countoccurrences",
+      "label": "countOccurrences()",
+      "file_type": "code",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "components_daterangepicker_daterangepicker",
+      "label": "DateRangePicker()",
+      "file_type": "code",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L29"
+    },
+    {
+      "id": "src_components_ui_dialog_jsx",
+      "label": "dialog.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_dialog_dialog",
+      "label": "Dialog()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "ui_dialog_dialogtrigger",
+      "label": "DialogTrigger()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "ui_dialog_dialogportal",
+      "label": "DialogPortal()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "ui_dialog_dialogclose",
+      "label": "DialogClose()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "ui_dialog_dialogoverlay",
+      "label": "DialogOverlay()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "ui_dialog_dialogcontent",
+      "label": "DialogContent()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L49"
+    },
+    {
+      "id": "ui_dialog_dialogheader",
+      "label": "DialogHeader()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "ui_dialog_dialogfooter",
+      "label": "DialogFooter()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L93"
+    },
+    {
+      "id": "ui_dialog_dialogtitle",
+      "label": "DialogTitle()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L117"
+    },
+    {
+      "id": "ui_dialog_dialogdescription",
+      "label": "DialogDescription()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L129"
+    },
+    {
+      "id": "src_components_ui_input_jsx",
+      "label": "input.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_input_input",
+      "label": "Input()",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_components_ui_button_jsx",
+      "label": "button.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_button_button",
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L43"
+    },
+    {
+      "id": "src_components_ui_table_jsx",
+      "label": "table.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_table_table",
+      "label": "Table()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "ui_table_tableheader",
+      "label": "TableHeader()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "ui_table_tablebody",
+      "label": "TableBody()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L33"
+    },
+    {
+      "id": "ui_table_tablefooter",
+      "label": "TableFooter()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L45"
+    },
+    {
+      "id": "ui_table_tablerow",
+      "label": "TableRow()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "ui_table_tablehead",
+      "label": "TableHead()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "ui_table_tablecell",
+      "label": "TableCell()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L87"
+    },
+    {
+      "id": "ui_table_tablecaption",
+      "label": "TableCaption()",
+      "file_type": "code",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L102"
+    },
+    {
+      "id": "src_components_ui_card_jsx",
+      "label": "card.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_card_card",
+      "label": "Card()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "ui_card_cardheader",
+      "label": "CardHeader()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "ui_card_cardtitle",
+      "label": "CardTitle()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "ui_card_carddescription",
+      "label": "CardDescription()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L52"
+    },
+    {
+      "id": "ui_card_cardaction",
+      "label": "CardAction()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "ui_card_cardcontent",
+      "label": "CardContent()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L79"
+    },
+    {
+      "id": "ui_card_cardfooter",
+      "label": "CardFooter()",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L91"
+    },
+    {
+      "id": "src_components_ui_label_jsx",
+      "label": "label.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ui_label_label",
+      "label": "Label()",
+      "file_type": "code",
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_lib_utils_js",
+      "label": "utils.js",
+      "file_type": "code",
+      "source_file": "src/lib/utils.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_utils_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "readme_nextjs_project",
+      "label": "Next.js Project",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_create_next_app",
+      "label": "create-next-app",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://github.com/vercel/next.js/tree/canary/packages/create-next-app",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_development_server",
+      "label": "Development Server",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_page_js",
+      "label": "app/page.js",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_next_font",
+      "label": "next/font",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://nextjs.org/docs/app/building-your-application/optimizing/fonts",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_geist_font",
+      "label": "Geist Font",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://vercel.com/font",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_vercel_platform",
+      "label": "Vercel Platform",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_nextjs_version_rules",
+      "label": "Next.js Version Rules",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_agents_md",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "file_svg_document_icon",
+      "label": "Document Icon",
+      "file_type": "image",
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "vercel_svg_vercel_logo",
+      "label": "Vercel Logo",
+      "file_type": "image",
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "next_svg_nextjs_logo",
+      "label": "Next.js Logo",
+      "file_type": "image",
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "globe_svg_globe_icon",
+      "label": "Globe Icon",
+      "file_type": "image",
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "window_svg_window_icon",
+      "label": "Window Icon",
+      "file_type": "image",
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "next_config_mjs",
+      "target": "node_path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config_mjs",
+      "target": "node_url",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_mjs",
+      "target": "config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_mjs",
+      "target": "core_web_vitals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout_js",
+      "target": "google",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout_js",
+      "target": "users_aadidev_code_timesync_willwork_src_app_globals_css",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout_js",
+      "target": "app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "imageupload",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "timetableeditor",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "daterangepicker",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "exportpanel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "authbutton",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_gettoday",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_getendofsemester",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_deletemodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_loadingview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_doneview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_stephero",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_benefitgrid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_page_js",
+      "target": "app_page_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_app",
+      "target": "app_page_gettoday",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_app",
+      "target": "app_page_getendofsemester",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_auth_google_route_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/google/route.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_auth_google_route_js",
+      "target": "google_route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/google/route.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_auth_callback_route_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/callback/route.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_auth_callback_route_js",
+      "target": "callback_route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/auth/callback/route.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_parse_image_route_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_parse_image_route_js",
+      "target": "genai",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_parse_image_route_js",
+      "target": "zod",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_parse_image_route_js",
+      "target": "parse_image_route_isratelimited",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_parse_image_route_js",
+      "target": "parse_image_route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "parse_image_route_post",
+      "target": "parse_image_route_isratelimited",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/parse-image/route.js",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "zod",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_firstoccurrence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_eventdatetime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_getauthtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_sync_gcal_route_js",
+      "target": "gcal_route_delete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_getauthtoken",
+      "target": "gcal_route_get",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_post",
+      "target": "gcal_route_getauthtoken",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_post",
+      "target": "gcal_route_firstoccurrence",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_post",
+      "target": "gcal_route_eventdatetime",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_get",
+      "target": "gcal_route_getauthtoken",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "gcal_route_delete",
+      "target": "gcal_route_getauthtoken",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/sync/gcal/route.js",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_export_ics_route_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_export_ics_route_js",
+      "target": "ics",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_export_ics_route_js",
+      "target": "zod",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_export_ics_route_js",
+      "target": "ics_route_firstoccurrence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_api_export_ics_route_js",
+      "target": "ics_route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/export/ics/route.js",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_timetomin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_mintotime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_mintopct",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_snap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_clamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_subjectcolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_timetableeditor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_eventblock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_timetableeditor_jsx",
+      "target": "components_timetableeditor_crossrowpreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L538",
+      "weight": 1.0
+    },
+    {
+      "source": "components_timetableeditor_crossrowpreview",
+      "target": "components_timetableeditor_mintopct",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TimetableEditor.jsx",
+      "source_location": "L539",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_imageupload_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ImageUpload.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_imageupload_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ImageUpload.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_imageupload_jsx",
+      "target": "components_imageupload_imageupload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ImageUpload.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_exportpanel_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_exportpanel_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_exportpanel_jsx",
+      "target": "users_aadidev_code_timesync_willwork_src_components_authbutton",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_exportpanel_jsx",
+      "target": "components_exportpanel_optcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_exportpanel_jsx",
+      "target": "components_exportpanel_exportpanel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExportPanel.jsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_authbutton_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/AuthButton.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_authbutton_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/AuthButton.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_authbutton_jsx",
+      "target": "components_authbutton_authbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/AuthButton.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_daterangepicker_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_daterangepicker_jsx",
+      "target": "components_daterangepicker_firstoccurrence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_daterangepicker_jsx",
+      "target": "components_daterangepicker_countoccurrences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_daterangepicker_jsx",
+      "target": "components_daterangepicker_daterangepicker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "components_daterangepicker_daterangepicker",
+      "target": "components_daterangepicker_countoccurrences",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DateRangePicker.jsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "dialog",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "button",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogtrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogportal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogclose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogoverlay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogfooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogtitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_dialog_jsx",
+      "target": "ui_dialog_dialogdescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_input_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_input_jsx",
+      "target": "input",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_input_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_input_jsx",
+      "target": "ui_input_input",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_button_jsx",
+      "target": "button",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_button_jsx",
+      "target": "class_variance_authority",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_button_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_button_jsx",
+      "target": "ui_button_button",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_table",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tableheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablebody",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablefooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablerow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablehead",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablecell",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_table_jsx",
+      "target": "ui_table_tablecaption",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_card",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_cardheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_cardtitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_carddescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_cardaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_cardcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_card_jsx",
+      "target": "ui_card_cardfooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_label_jsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_label_jsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_label_jsx",
+      "target": "ui_label_label",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_utils_js",
+      "target": "clsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_utils_js",
+      "target": "tailwind_merge",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_utils_js",
+      "target": "lib_utils_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogoverlay",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogcontent",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogheader",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogfooter",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogtitle",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_dialog_dialogdescription",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/dialog.jsx",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_input_input",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/input.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_button_button",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/button.jsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_table",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tableheader",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablebody",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablefooter",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablerow",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablehead",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablecell",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_table_tablecaption",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/table.jsx",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_card",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_cardheader",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_cardtitle",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_carddescription",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_cardaction",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_cardcontent",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_card_cardfooter",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/card.jsx",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "ui_label_label",
+      "target": "lib_utils_cn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ui/label.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_nextjs_project",
+      "target": "readme_create_next_app",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_nextjs_project",
+      "target": "readme_development_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_nextjs_project",
+      "target": "readme_app_page_js",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_nextjs_project",
+      "target": "readme_next_font",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_next_font",
+      "target": "readme_geist_font",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_nextjs_project",
+      "target": "readme_vercel_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_agents_md",
+      "target": "agents_nextjs_version_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

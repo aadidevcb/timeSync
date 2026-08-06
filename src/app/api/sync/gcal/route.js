@@ -14,7 +14,8 @@ const requestSchema = z.object({
     events: z.array(eventSchema).max(500, "Too many events. Maximum is 500."),
     semester_start: z.string(),
     semester_end: z.string(),
-    recurrence_type: z.string().optional()
+    recurrence_type: z.string().optional(),
+    time_zone: z.string().optional()
 });
 
 
@@ -28,7 +29,7 @@ const WEEKDAYS = {
 
 const CALENDAR_ID = 'primary';
 const TIMESYNC_TAG = 'timesync'; // private extended property marker
-const CALENDAR_TIME_ZONE = 'Asia/Kolkata';
+const DEFAULT_TIME_ZONE = 'Asia/Kolkata';
 
 function firstOccurrence(dayName, semesterStart) {
     // Date-only strings are interpreted as UTC by JavaScript. Keep all of this
@@ -85,7 +86,12 @@ export async function POST(request) {
             return NextResponse.json({ detail: parseResult.error.errors[0].message }, { status: 400 });
         }
 
-        const { events, semester_start, semester_end, recurrence_type } = parseResult.data;
+        const { events, semester_start, semester_end, recurrence_type, time_zone } = parseResult.data;
+        // The timetable stores local wall-clock times (for example, 09:00),
+        // so pair them with the browser's IANA time zone rather than the
+        // server's or a hard-coded zone. Keep the previous value as a fallback
+        // for older clients that do not send time_zone.
+        const calendarTimeZone = time_zone || DEFAULT_TIME_ZONE;
 
         // Include classes on the final semester day. RRULE UNTIL uses UTC.
         const untilStr = `${semester_end.replace(/-/g, '')}T235959Z`;
@@ -99,8 +105,8 @@ export async function POST(request) {
             const eventBody = {
                 summary: `${ev.subject} (${ev.type || 'Lecture'})`,
                 location: ev.location || "",
-                start: { dateTime: eventDateTime(first, ev.start_time), timeZone: CALENDAR_TIME_ZONE },
-                end: { dateTime: eventDateTime(first, ev.end_time), timeZone: CALENDAR_TIME_ZONE },
+                start: { dateTime: eventDateTime(first, ev.start_time), timeZone: calendarTimeZone },
+                end: { dateTime: eventDateTime(first, ev.end_time), timeZone: calendarTimeZone },
                 recurrence: recurrence_type === "weekly" ? [`RRULE:FREQ=WEEKLY;UNTIL=${untilStr}`] : [],
                 reminders: {
                     useDefault: false,

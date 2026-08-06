@@ -1,0 +1,311 @@
+{
+  "communities": {
+    "0": [
+      "lib_utils_cn",
+      "src_components_ui_button_jsx",
+      "src_components_ui_card_jsx",
+      "src_components_ui_input_jsx",
+      "src_components_ui_label_jsx",
+      "src_components_ui_table_jsx",
+      "src_lib_utils_js",
+      "ui_button_button",
+      "ui_card_card",
+      "ui_card_cardaction",
+      "ui_card_cardcontent",
+      "ui_card_carddescription",
+      "ui_card_cardfooter",
+      "ui_card_cardheader",
+      "ui_card_cardtitle",
+      "ui_input_input",
+      "ui_label_label",
+      "ui_table_table",
+      "ui_table_tablebody",
+      "ui_table_tablecaption",
+      "ui_table_tablecell",
+      "ui_table_tablefooter",
+      "ui_table_tablehead",
+      "ui_table_tableheader",
+      "ui_table_tablerow"
+    ],
+    "1": [
+      "src_components_ui_dialog_jsx",
+      "ui_dialog_dialog",
+      "ui_dialog_dialogclose",
+      "ui_dialog_dialogcontent",
+      "ui_dialog_dialogdescription",
+      "ui_dialog_dialogfooter",
+      "ui_dialog_dialogheader",
+      "ui_dialog_dialogoverlay",
+      "ui_dialog_dialogportal",
+      "ui_dialog_dialogtitle",
+      "ui_dialog_dialogtrigger"
+    ],
+    "2": [
+      "components_timetableeditor_clamp",
+      "components_timetableeditor_crossrowpreview",
+      "components_timetableeditor_eventblock",
+      "components_timetableeditor_mintopct",
+      "components_timetableeditor_mintotime",
+      "components_timetableeditor_snap",
+      "components_timetableeditor_subjectcolor",
+      "components_timetableeditor_timetableeditor",
+      "components_timetableeditor_timetomin",
+      "src_components_timetableeditor_jsx"
+    ],
+    "3": [
+      "app_page_app",
+      "app_page_benefitgrid",
+      "app_page_deletemodal",
+      "app_page_doneview",
+      "app_page_getendofsemester",
+      "app_page_gettoday",
+      "app_page_loadingview",
+      "app_page_stephero",
+      "src_app_page_js"
+    ],
+    "4": [
+      "gcal_route_delete",
+      "gcal_route_eventdatetime",
+      "gcal_route_firstoccurrence",
+      "gcal_route_get",
+      "gcal_route_getauthtoken",
+      "gcal_route_post",
+      "src_app_api_sync_gcal_route_js"
+    ],
+    "5": [
+      "readme_app_page_js",
+      "readme_create_next_app",
+      "readme_development_server",
+      "readme_geist_font",
+      "readme_next_font",
+      "readme_nextjs_project",
+      "readme_vercel_platform"
+    ],
+    "6": [
+      "components_daterangepicker_countoccurrences",
+      "components_daterangepicker_daterangepicker",
+      "components_daterangepicker_firstoccurrence",
+      "src_components_daterangepicker_jsx"
+    ],
+    "7": [
+      "parse_image_route_isratelimited",
+      "parse_image_route_post",
+      "src_app_api_parse_image_route_js"
+    ],
+    "8": [
+      "ics_route_firstoccurrence",
+      "ics_route_post",
+      "src_app_api_export_ics_route_js"
+    ],
+    "9": [
+      "components_exportpanel_exportpanel",
+      "components_exportpanel_optcard",
+      "src_components_exportpanel_jsx"
+    ],
+    "10": [
+      "app_layout_rootlayout",
+      "src_app_layout_js"
+    ],
+    "11": [
+      "google_route_get",
+      "src_app_api_auth_google_route_js"
+    ],
+    "12": [
+      "callback_route_get",
+      "src_app_api_auth_callback_route_js"
+    ],
+    "13": [
+      "components_imageupload_imageupload",
+      "src_components_imageupload_jsx"
+    ],
+    "14": [
+      "components_authbutton_authbutton",
+      "src_components_authbutton_jsx"
+    ],
+    "15": [
+      "agents_nextjs_version_rules",
+      "claude_agents_md"
+    ],
+    "16": [
+      "postcss_config_mjs"
+    ],
+    "17": [
+      "next_config_mjs"
+    ],
+    "18": [
+      "eslint_config_mjs"
+    ],
+    "19": [
+      "file_svg_document_icon"
+    ],
+    "20": [
+      "vercel_svg_vercel_logo"
+    ],
+    "21": [
+      "next_svg_nextjs_logo"
+    ],
+    "22": [
+      "globe_svg_globe_icon"
+    ],
+    "23": [
+      "window_svg_window_icon"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12,
+    "1": 0.18,
+    "2": 0.22,
+    "3": 0.28,
+    "4": 0.52,
+    "5": 0.29,
+    "6": 0.67,
+    "7": 1.0,
+    "8": 0.67,
+    "9": 0.67,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0
+  },
+  "gods": [
+    {
+      "id": "lib_utils_cn",
+      "label": "cn()",
+      "degree": 25
+    },
+    {
+      "id": "readme_nextjs_project",
+      "label": "Next.js Project",
+      "degree": 5
+    },
+    {
+      "id": "gcal_route_getauthtoken",
+      "label": "getAuthToken()",
+      "degree": 4
+    },
+    {
+      "id": "gcal_route_post",
+      "label": "POST()",
+      "degree": 4
+    },
+    {
+      "id": "app_page_app",
+      "label": "App()",
+      "degree": 3
+    },
+    {
+      "id": "app_page_gettoday",
+      "label": "getToday()",
+      "degree": 2
+    },
+    {
+      "id": "app_page_getendofsemester",
+      "label": "getEndOfSemester()",
+      "degree": 2
+    },
+    {
+      "id": "parse_image_route_isratelimited",
+      "label": "isRateLimited()",
+      "degree": 2
+    },
+    {
+      "id": "parse_image_route_post",
+      "label": "POST()",
+      "degree": 2
+    },
+    {
+      "id": "gcal_route_firstoccurrence",
+      "label": "firstOccurrence()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "DialogOverlay()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/dialog.jsx",
+        "src/lib/utils.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `DialogOverlay()` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "DialogContent()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/dialog.jsx",
+        "src/lib/utils.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `DialogContent()` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "DialogHeader()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/dialog.jsx",
+        "src/lib/utils.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `DialogHeader()` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "DialogFooter()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/dialog.jsx",
+        "src/lib/utils.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `DialogFooter()` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "DialogTitle()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/dialog.jsx",
+        "src/lib/utils.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `DialogTitle()` unexpectedly reaches hub `cn()`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `cn()` connect `Application Components` to `Application Components`?",
+      "why": "High betweenness centrality (0.100) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 24 inferred relationships involving `cn()` (e.g. with `DialogOverlay()` and `DialogContent()`) actually correct?",
+      "why": "`cn()` has 24 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `create-next-app`, `Development Server`, `app/page.js` to the rest of the system?",
+      "why": "12 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Application Components` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

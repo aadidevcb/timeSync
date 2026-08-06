@@ -74,10 +74,13 @@ export default function ExportPanel({ events, semesterStart, semesterEnd, recurr
   const handleSyncGcal = async () => {
     setGcalLoading(true); setGcalError(null);
     try {
+      // Send the user's local IANA zone with the wall-clock class times. This
+      // prevents the server's deployment zone from changing a 09:00 class.
+      const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       const res = await fetch('/api/sync/gcal', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${accessToken}` },
-        body: JSON.stringify({ events, semester_start: semesterStart, semester_end: semesterEnd, recurrence_type: recurrenceType }),
+        body: JSON.stringify({ events, semester_start: semesterStart, semester_end: semesterEnd, recurrence_type: recurrenceType, time_zone: timeZone }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail || `Error ${res.status}`);
